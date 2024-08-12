@@ -1,0 +1,7 @@
+FROM debian:bookworm-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y curl jq
+
+COPY ./create_users.sh create_users.sh

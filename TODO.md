@@ -1,0 +1,2 @@
+- Automate Postgres Connection.
+- Or, just make a thing that tells people how to put the postgres in.
