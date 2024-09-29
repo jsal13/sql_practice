@@ -50,17 +50,9 @@ services:
       - ./data:/docker-entrypoint-initdb.d
     ports:
       - 5432:5432
-    networks:
-      - datanet
 
   adminer:
     image: adminer
     restart: always
     ports:
       - 8080:8080
-    networks:
-      - datanet
-
-networks:
-  datanet:
-    driver: bridge
